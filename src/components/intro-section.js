@@ -18,7 +18,8 @@ const SectionContainer = styled.section`
 `;
 
 const Title = styled.h1`
-  font-family: "Aleo", serif;
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+  font-family: 'Source Code Pro', monospace;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 2.4rem;
