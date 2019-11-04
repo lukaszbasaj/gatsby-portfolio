@@ -25,7 +25,8 @@
     "react-typing-effect": "^2.0.2",
     "styled-components": "^4.2.0",
     "typeface-aleo": "0.0.69",
-    "typeface-quicksand": "0.0.71"
+    "typeface-quicksand": "0.0.71",
+    "typewriter-effect": "^2.12.1"
   },
   "keywords": [
     "portfolio"

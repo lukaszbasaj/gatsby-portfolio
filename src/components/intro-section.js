@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import styled from "styled-components";
-import ReactTypingEffect from 'react-typing-effect';
+import Typewriter from 'typewriter-effect';
 import ExternalLink from "./external-link";
 import Github from "../images/social-media/github.svg";
 import Codepen from "../images/social-media/codepen.svg";
@@ -70,7 +70,13 @@ function IntroSection() {
     <SectionContainer>
       <div>
         <Title>
-          <ReactTypingEffect text='Developer. Driven by Passion.' />
+        <Typewriter
+  options={{
+    strings: ['developer. driven by passion.'],
+    autoStart: true,
+    loop: true,
+  }}
+/>
         </Title>
       </div>
       <IconContainer>
