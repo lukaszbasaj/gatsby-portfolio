@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import styled from "styled-components";
+import ReactTypingEffect from 'react-typing-effect';
 import ExternalLink from "./external-link";
 import Github from "../images/social-media/github.svg";
 import Codepen from "../images/social-media/codepen.svg";
@@ -64,10 +65,13 @@ function IntroSection() {
       icon: Email,
     },
   ];
+
   return (
     <SectionContainer>
       <div>
-        <Title>Developer. Driven by Passion.</Title>
+        <Title>
+          <ReactTypingEffect text='Developer. Driven by Passion.' />
+        </Title>
       </div>
       <IconContainer>
         {links.map(link => {
