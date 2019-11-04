@@ -4,7 +4,6 @@ import styled from "styled-components";
 import media from "../../utils/media";
 
 const Container = styled.div`
-  padding: 0 2rem;
   align-self: center;
 
   ${media.phone`
@@ -31,6 +30,7 @@ function DescriptionSection() {
           <li>HTML5. CSS3. JavaScript. ES6+. TypeScript. Node.js. React</li>
           <li>Continuous integration. Continuous delivery. Continuous deployment</li>
           <li>Serverless. AWS. Azure</li>
+          <li>Photography</li>
           <li>Storytelling. Public speaking. Leadership</li>
         </ul>
       </Container>

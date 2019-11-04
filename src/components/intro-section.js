@@ -9,6 +9,8 @@ import Stackoverflow from "../images/social-media/stackoverflow.svg";
 import Email from "../images/social-media/email.svg";
 
 const SectionContainer = styled.section`
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+  font-family: 'Source Code Pro', monospace;
   display: grid;
   height: 40vh;
   padding: 2rem;
@@ -18,8 +20,7 @@ const SectionContainer = styled.section`
 `;
 
 const Title = styled.h1`
-  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
-  font-family: 'Source Code Pro', monospace;
+  
   text-transform: uppercase;
   font-weight: 500;
   font-size: 2.4rem;
@@ -61,7 +62,7 @@ function IntroSection() {
       icon: LinkedIn,
     },
     {
-      to: "mailto:lukasz@basaj.dev",
+      to: "http://scr.im/basajdev",
       icon: Email,
     },
   ];

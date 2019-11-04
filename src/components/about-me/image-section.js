@@ -10,7 +10,7 @@ const query = graphql`
   query {
     file(relativePath: { eq: "73012030.jpg" }) {
       childImageSharp {
-        fixed(width: 350, height: 350) {
+        fixed(width: 270, height: 270) {
           ...GatsbyImageSharpFixed_tracedSVG
         }
       }
@@ -20,10 +20,12 @@ const query = graphql`
 
 const StyledImg = styled(Img)`
   border-radius: 50%;
+  
 `
 
 const Container = styled.div`
   place-self: end;
+  right: 5%;
   position: relative;
   overflow: hidden;
  
