@@ -18,7 +18,7 @@ const SectionContainer = styled.section`
 `;
 
 const Title = styled.h1`
-  
+  font-family: 'Source Code Pro', monospace;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 2.4rem;
