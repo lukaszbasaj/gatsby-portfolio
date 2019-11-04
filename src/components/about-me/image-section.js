@@ -35,12 +35,6 @@ const Container = styled.div`
     grid-column: 1/3;
     width: 100%;
     left: 10%;
-
-
-    &>.gatsby-image-wrapper {
-      margin-left: calc(50% - 50vw);
-      margin-right: calc(50% - 50vw);
-    }
   `}
 `;
 
