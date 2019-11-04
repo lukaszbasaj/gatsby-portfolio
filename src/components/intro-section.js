@@ -9,8 +9,6 @@ import Stackoverflow from "../images/social-media/stackoverflow.svg";
 import Email from "../images/social-media/email.svg";
 
 const SectionContainer = styled.section`
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
-  font-family: 'Source Code Pro', monospace;
   display: grid;
   height: 40vh;
   padding: 2rem;

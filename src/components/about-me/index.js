@@ -7,6 +7,8 @@ import ImageSection from "./image-section";
 const Section = styled.section`
   display: grid;
   margin: 1rem 2rem;
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+  font-family: 'Source Code Pro', monospace;
   grid-template-rows: 4rem auto;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 2rem;
