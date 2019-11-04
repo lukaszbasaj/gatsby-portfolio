@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import DescriptionSection from "./description-section";
 import ImageSection from "./image-section";
-
+import GithubCorner from 'react-github-corner';
 const Section = styled.section`
   display: grid;
   margin: 1rem 2rem;
@@ -26,6 +26,7 @@ function AboutMe() {
       <Title></Title>
       <ImageSection />
       <DescriptionSection />
+      <GithubCorner href="https://github.com/lukaszbasaj/gatsby-portfolio" />
     </Section>
   );
 }

@@ -3,8 +3,9 @@ import { graphql, StaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
-
 import media from "../../utils/media";
+
+
 
 const query = graphql`
   query {
