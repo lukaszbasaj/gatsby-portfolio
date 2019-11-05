@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import styled from "styled-components";
-import Typewriter from 'typewriter-effect';
 import ExternalLink from "./external-link";
+import Typist from 'react-typist';
 import Github from "../images/social-media/github.svg";
 import Codepen from "../images/social-media/codepen.svg";
 import LinkedIn from "../images/social-media/linked-in.svg";
@@ -68,17 +68,13 @@ function IntroSection() {
 
   return (
     <SectionContainer>
-      <div>
+      <>
         <Title>
-        <Typewriter
-  options={{
-    strings: ['developer. driven by passion.'],
-    autoStart: true,
-    loop: true,
-  }}
-/>
+          <Typist>
+            developer. driven by passion.
+      </Typist>
         </Title>
-      </div>
+      </>
       <IconContainer>
         {links.map(link => {
           const Icon = link.icon;
