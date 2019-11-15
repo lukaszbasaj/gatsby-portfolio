@@ -31,7 +31,8 @@ function DescriptionSection() {
           <li>
             Continuous integration. Continuous delivery. Continuous deployment
           </li>
-          <li>Serverless. AWS. Azure</li>
+          <li>Docker. Kubernetes.</li>
+          <li>Serverless. AWS. Azure. GCP.</li>
           <li>Photography</li>
           <li>Storytelling. Public speaking. Leadership</li>
         </ul>
