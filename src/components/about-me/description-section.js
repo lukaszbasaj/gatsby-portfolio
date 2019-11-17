@@ -5,6 +5,8 @@ import media from "../../utils/media";
 
 const Container = styled.div`
   align-self: center;
+  justify-self: left;
+  padding: 3%;
 
   ${media.phone`
     grid-column: 1 / 3;
