@@ -3,14 +3,17 @@ import styled from "styled-components";
 
 import DescriptionSection from "./description-section";
 import ImageSection from "./image-section";
-import GithubCorner from 'react-github-corner';
+import GithubCorner from "react-github-corner";
 const Section = styled.section`
   display: grid;
   margin: 1rem 2rem;
-  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
-  font-family: 'Source Code Pro', monospace;
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+  font-family: "Source Code Pro", monospace;
   grid-template-rows: 4rem auto;
   grid-row-gap: 2rem;
+  justify-self: right;
+  justify-items: right;
+  align-items: center;
 `;
 
 const Title = styled.h2`

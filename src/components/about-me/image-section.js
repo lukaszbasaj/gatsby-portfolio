@@ -5,8 +5,6 @@ import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
 import media from "../../utils/media";
 
-
-
 const query = graphql`
   query {
     file(relativePath: { eq: "73012030.jpg" }) {
@@ -21,55 +19,27 @@ const query = graphql`
 
 const StyledImg = styled(Img)`
   border-radius: 50%;
-  
-`
+  border: solid 0.1em;
 
-const Container = styled.div`
-  place-self: end;
-  right: 5%;
-  position: relative;
-  overflow: hidden;
- 
-
-  ${media.phone`
-    grid-column: 1/3;
-    width: 100%;
-    left: 10%;
-  `}
+  }
 `;
-
-const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 40,
-  (x - window.innerWidth / 2) / 40,
-  1.02,
-];
-const trans = (x, y, s) =>
-  `perspective(5000px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
-
 function ImageSection() {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
-    config: { mass: 150, tension: 350, friction: 100 },
+    config: { mass: 150, tension: 270, friction: 100 },
   }));
 
-  const AnimatedContainer = animated(Container);
   return (
-    <AnimatedContainer
-      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-      onMouseLeave={() => set({ xys: [0, 0, 1] })}
-      style={{ transform: props.xys.interpolate(trans) }}
-    >
-      <StaticQuery
-        query={query}
-        render={data => (
-          <StyledImg
-            fixed={data.file.childImageSharp.fixed}
-            alt="Me at JavaScript workshop as a trainer"
-            style={{ zIndex: 1 }}
-          />
-        )}
-      />
-    </AnimatedContainer>
+    <StaticQuery
+      query={query}
+      render={data => (
+        <StyledImg
+          fixed={data.file.childImageSharp.fixed}
+          alt="Me at JavaScript workshop as a trainer"
+          style={{ zIndex: 1 }}
+        />
+      )}
+    />
   );
 }
 
