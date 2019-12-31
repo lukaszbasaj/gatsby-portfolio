@@ -6,7 +6,7 @@ import ImageSection from "./image-section";
 import GithubCorner from "react-github-corner";
 const Section = styled.section`
   display: grid;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem 0 2rem;
   @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
   font-family: "Source Code Pro", monospace;
   grid-template-rows: 4rem auto;
@@ -14,6 +14,11 @@ const Section = styled.section`
   justify-self: right;
   justify-items: right;
   align-items: center;
+  border-top: solid;
+  border-bottom: 0;
+  border-left: solid;
+  border-right: solid;
+  border-top-left-radius: 20px;
 `;
 
 const Title = styled.h2`
