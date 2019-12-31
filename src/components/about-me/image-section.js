@@ -7,7 +7,7 @@ import media from "../../utils/media";
 
 const query = graphql`
   query {
-    file(relativePath: { eq: "73012030.jpg" }) {
+    file(relativePath: { eq: "73012030_1.jpg" }) {
       childImageSharp {
         fixed(width: 270, height: 270) {
           ...GatsbyImageSharpFixed_tracedSVG

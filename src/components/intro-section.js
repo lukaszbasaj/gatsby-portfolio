@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import styled from "styled-components";
 import ExternalLink from "./external-link";
-import Typist from 'react-typist';
+import Typist from "react-typist";
 import Github from "../images/social-media/github.svg";
 import Codepen from "../images/social-media/codepen.svg";
 import LinkedIn from "../images/social-media/linked-in.svg";
@@ -16,10 +16,17 @@ const SectionContainer = styled.section`
   grid-template-rows: 1fr 8rem;
   text-align: center;
   align-items: center;
+  margin: 0 2rem 0 2rem;
+  border-top: 0;
+  border-bottom: solid;
+  border-left: solid;
+  border-right: solid;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 `;
 
 const Title = styled.h1`
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 2.4rem;
@@ -70,9 +77,7 @@ function IntroSection() {
     <SectionContainer>
       <>
         <Title>
-          <Typist>
-            developer. driven by passion.
-      </Typist>
+          <Typist>developer. driven by passion.</Typist>
         </Title>
       </>
       <IconContainer>
