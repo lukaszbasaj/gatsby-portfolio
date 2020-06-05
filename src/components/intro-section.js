@@ -68,7 +68,7 @@ function IntroSection() {
       icon: LinkedIn,
     },
     {
-      to: "http://scr.im/basajdev",
+      to: "mailto: lukasz@basaj.dev",
       icon: Email,
     },
   ];
